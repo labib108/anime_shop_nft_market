@@ -1,0 +1,20 @@
+{
+  "name": "anime_shop_nft_market",
+  "version": "1.0.0",
+  "description": "A nft market place for buy and sell anime character",
+  "homepage": "https://github.com/labib108/anime_shop_nft_market#readme",
+  "bugs": {
+    "url": "https://github.com/labib108/anime_shop_nft_market/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labib108/anime_shop_nft_market.git"
+  },
+  "license": "ISC",
+  "author": "Labib",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
