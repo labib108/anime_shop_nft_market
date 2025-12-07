@@ -1,7 +1,21 @@
 step 1: install npm package
 npm install
+
 step 2: install hardhat
 npx hardhat --init
 npm install --save-dev "hardhat@^3.0.17" "@nomicfoundation/hardhat-toolbox-viem@^5.0.1" "@nomicfoundation/hardhat-ignition@^3.0.6" "@types/node@^22.8.5" "forge-std@foundry-rs/forge-std#v1.9.4" "typescript@~5.8.0" "viem@^2.30.0"
+npx hardhat compile
+
 step 3: install OpenZeppelin
 npm install @openzeppelin/contracts
+
+step 4:animeNftMarketplace.sol
+//SPDX License Identifier : Software Package Data Exchange. An SPDX License Identifier is a standardized, short, machine-readable code (like Apache-2.0 or MIT) representing a specific open-source license, used for clear, unambiguous identification within source files or SPDX documents to aid compliance and automation in software development.
+pragma solidity ^0.8.x; 
+The pragma solidity ^0.8.x; line in a Solidity smart contract specifies the compiler version to be used. 
+
+step 5: import necessary packages
+
+step 6:AnimeCharacterNFT.sol
+create a contract for AnimeCharacterNFT
+This contract is the "Factory" and the "ledger" for anime characters.
