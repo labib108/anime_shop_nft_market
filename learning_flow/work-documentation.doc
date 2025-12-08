@@ -1,0 +1,28 @@
+💻 Phase 1: Core Smart Contract Development (Solidity):
+blockchain layer will use two main contracts: one for the collectible itself (AnimeCharacterNFT) and one for the trading platform (AnimeMarketplace).
+
+1.1. 📜 Contract 1: AnimeCharacterNFT.sol (The Asset);This contract defines the unique anime character and contains the immutable rules.
+Standard (ERC-721),Creator Royalties (EIP-2981),Minting Function,Metadata Link
+
+1.2. 💲 Contract 2: AnimeMarketplace.sol (The Trading Platform):This contract enables trustless fixed-price sales and auctions. It must be non-custodial and handle all fee/royalty splits.
+Non-Custodial Security,Fixed-Price Sales,Auction (English Bidding),Fee Distribution,Events
+
+Step 1: Core Setup and State Variables
+feeAccount,feePercent,Listing,Auction,listings
+Step 2: Non-Custodial Security & Listing
+Step 3: Fixed-Price Sales (buyItem)
+nonReentrant: prevent the critical Reentrancy attack
+Step 4: Auction (English Bidding)
+Step 5: Fee Distribution and Royalty Splits (_settlePayment)
+
+
+
+
+
+
+
+🖼️ Phase 2: Indexing Preparation (Node.js/PostgreSQL):marketplace provides fast, searchable data based on your on-chain rules.
+
+2.1. 💾 PostgreSQL Schema Definition:database must be structured to index the NFT's custom data (traits) for filtering.
+
+2.2. 📈 Trait Indexing Mechanism:custom features are made functional for the user interface.

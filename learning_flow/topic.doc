@@ -1,0 +1,41 @@
+ERC721URIStorage: The standard NFT logic + the ability to store a unique URL (IPFS link) for every single token individually.
+
+ERC721Royalty: Implements EIP-2981. This is the standard that tells marketplaces (OpenSea, Blur) "Pay this address X% when this item is sold."
+
+State Variables: uint256 private _nextTokenId;
+A counter variable stored on the blockchain
+
+Ownable: Adds a security layer. It creates an owner variable and an onlyOwner modifier, so only you can run administrative functions.
+
+ERC721("name", "symbol"): Calls the parent constructor to name your collection with the ticker symbol.
+
+_safeMint: The core logic. It writes to the blockchain: "Address to now owns Token ID 0". "Safe" means it checks if the receiver is a valid wallet/contract.
+
+Diamond Inheritance problem: Diamond Problem is a classic ambiguity issue when Multiple Inheritance.class inherits from two classes that both inherit from the same common superclass.
+It uses C3 Linearization to resolve diamond problem
+ ERC721 - base class
+ ERC721URIStorage, ERC721Royalty - derived class
+ tokenURI - inherit drived class properties, so confused which one need to execute.
+ need override. l3 linearization like python MRO - Method Resolution Order 
+ super.tokenURI,super.supportsInterface
+
+ interface IERC2981: Defines the EIP-2981 Royalty Interface. This tells the Marketplace how to read the required royalty amount and receiver address from the NFT contract.
+
+Event: store arguments in the transaction log,Events are stored in the transaction's log section
+ indexed: enables efficient search and filtering
+
+ When a parameter in an event is marked indexed, the Ethereum Virtual Machine (EVM) stores that parameter in a special structure within the log called "topics" instead of the log's "data" section.
+
+ Topics (Indexed): These are easily searchable headers.
+external: function visibility specifier,read directly from the calldata
+
+IERC721:Interface ERC-721
+
+Solidity compiler (solc)
+
+chai:chai Assertion Library for Node.js nd the browser, commonly used with testing frameworks like Mocha or Jest
+B.D.D. (Behavior Driven Development) Styles:expect,should
+T.D.D. (Test Driven Development) Style: assert
+Mocha function: testing function,describe(),it()/specify()
+
+Hardhat Runtime Environment (HRE)

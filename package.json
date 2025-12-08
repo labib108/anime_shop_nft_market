@@ -1,22 +1,23 @@
 {
   "name": "anime_shop_nft_market",
   "version": "1.0.0",
-  "description": "A nft market place for buy and sell anime character",
-  "homepage": "https://github.com/labib108/anime_shop_nft_market#readme",
-  "bugs": {
-    "url": "https://github.com/labib108/anime_shop_nft_market/issues"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/labib108/anime_shop_nft_market.git"
   },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "author": "Labib",
   "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bugs": {
+    "url": "https://github.com/labib108/anime_shop_nft_market/issues"
   },
+  "homepage": "https://github.com/labib108/anime_shop_nft_market#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.6",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",

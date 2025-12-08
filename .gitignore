@@ -18,6 +18,3 @@
 
 # Hardhat coverage reports
 /coverage
-
-# Temporary files
-/learning_flow

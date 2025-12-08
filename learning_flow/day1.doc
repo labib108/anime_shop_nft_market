@@ -19,3 +19,5 @@ step 5: import necessary packages
 step 6:AnimeCharacterNFT.sol
 create a contract for AnimeCharacterNFT
 This contract is the "Factory" and the "ledger" for anime characters.
+
+step 7: test
