@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  ipfs:
+    image: ipfs/kubo:latest
+    container_name: ipfs-node
+    restart: always
+    ports:
+      - 4001:4001   # Swarm
+      - 5001:5001   # API
+      - 8080:8080   # Gateway
+    volumes:
+      - ./ipfs-staging:/export
+      - ./ipfs-data:/data/ipfs

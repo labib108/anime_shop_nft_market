@@ -280,6 +280,12 @@ contract AnimeMarketplace is ReentrancyGuard, Ownable {
         require(balance > 0, "No tokens to withdraw");
         token.transfer(to, balance);
     }
+
+    function emergencyWithdraw() external onlyOwner {
+        uint256 balance = address(this).balance;
+        require(balance > 0, "No funds");
+        _safeTransferETH(payable(msg.sender), balance);
+    }
     
     function getPendingWithdrawal(address user) external view returns (uint256) {
         return pendingWithdrawals[user];

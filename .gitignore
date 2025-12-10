@@ -18,3 +18,9 @@
 
 # Hardhat coverage reports
 /coverage
+
+# Environment variables
+.env
+
+#local file
+/learning_flow
